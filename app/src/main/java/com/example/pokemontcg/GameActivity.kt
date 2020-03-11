@@ -1,5 +1,6 @@
 package com.example.pokemontcg
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -16,5 +17,9 @@ class GameActivity : AppCompatActivity() {
     fun changeText(view: View) {
         val tv1 = findViewById(R.id.hellotext) as TextView
         tv1.text = "Pokemon!"
+    }
+    fun battleStart(view: View) {
+        val myIntent = Intent(baseContext, BattleActivity::class.java)
+        startActivity(myIntent)
     }
 }

@@ -17,6 +17,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/battlestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battle!"
+        app:layout_constraintBottom_toTopOf="@id/changetext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="battleStart"/>
+
+    <Button
+        android:id="@+id/changetext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Press Me"
