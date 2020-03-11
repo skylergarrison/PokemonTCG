@@ -20,6 +20,8 @@ class MainMenuActivity : AppCompatActivity() {
     }
 
     fun optionsScreen(view: View) {
-        Toast.makeText(applicationContext,"under construction",Toast.LENGTH_SHORT).show()
+        //Toast.makeText(applicationContext,"under construction",Toast.LENGTH_SHORT).show()
+        val optsIntent = Intent(baseContext, OptionsActivity::class.java)
+        startActivity(optsIntent)
     }
 }
